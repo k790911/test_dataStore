@@ -17,7 +17,7 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
         
         DataManager.shared.fetchMemo()
-        myLabel.text = DataManager.shared.memoList[1].title ?? "0"
+        myLabel.text = DataManager.shared.memoList[1].title ?? "0" // 이분에서 인덱싱때문에 에러남
     }
 
     @IBAction func myButton(_ sender: UIButton) {
